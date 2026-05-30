@@ -1,0 +1,44 @@
+{
+    "format": {
+      "type": "json_schema",
+      "name": "data_extraction_response",
+      "description": "Ordered lists containing file metadata parsed from multiple tables",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "data_records": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "file_name": { "type": "string" },
+                "key": { "type": "string" },
+                "item": { "type": "string" },
+                "data_type": { "type": "string" },
+                "format": { "type": "string" },
+                "length": { "type": "integer" },
+                "start": { "type": "integer" },
+                "end": { "type": "integer" },
+                "comments": { "type": "string" }
+              },
+              "required": [
+                "file_name",
+                "key",
+                "item",
+                "data_type",
+                "format",
+                "length",
+                "start",
+                "end",
+                "comments"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": ["data_records"],
+        "additionalProperties": false
+      },
+      "strict": true
+    }
+  }
