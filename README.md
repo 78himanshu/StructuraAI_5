@@ -49,9 +49,6 @@ StructuraAI automates this process by:
 
 text Financial Documentation PDFs             │             ▼       PDF Processing             │             ▼     Metadata Extraction             │             ▼       Schema Detection             │             ▼     Structured JSON Output             │             ▼  Downstream Analytics Systems 
 
-## Repository Structure
-
-text StructuraAI/ │ ├── hpaithan_extract_full_history_tables.py ├── structure.py ├── structure.json ├── hpaithan_requirements.txt ├── ibes_detail_history_docs_extended.pdf ├── ibes_summary_history_docs_extended.pdf ├── .gitignore └── README.md 
 
 ## Example Output
 
@@ -71,7 +68,7 @@ bash python -m venv .venv source .venv/bin/activate
 
 Install dependencies:
 
-bash pip install -r hpaithan_requirements.txt 
+bash pip install -r requirements.txt 
 
 ## Usage
 
@@ -79,7 +76,7 @@ bash pip install -r hpaithan_requirements.txt
 2. Configure your API credentials.
 3. Run the extraction pipeline:
 
-bash python hpaithan_extract_full_history_tables.py 
+bash python schema_extractor.py 
 
 4. Review the generated structured JSON output.
 
