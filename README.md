@@ -101,7 +101,7 @@ bash python schema_extractor.py
 
 ## Author
 
-Himanshu Paithane
+Himanshu 
 
 Master of Science in Computer Science  
 Stevens Institute of Technology
